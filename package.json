@@ -16,7 +16,9 @@
     "setup:js:typescript": "zsh add-typescript.sh",
     "setup:next-app": "zsh init-next-app.sh",
     "setup:react-app": "zsh init-react-app.sh",
-    "setup:remix-app": "zsh init-remix-app.sh"
+    "setup:remix-app": "zsh init-remix-app.sh",
+    "status": "run-s status:*",
+    "status:prs": "zsh list-prs.sh"
   },
   "repository": {
     "type": "git",
