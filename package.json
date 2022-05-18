@@ -9,7 +9,9 @@
     "usage:main": "echo 'To setup the standard suite, run: INSTALL_DIR= npm run setup'",
     "setup": "run-s setup:*",
     "setup:dependabot": "zsh add-dependabot.sh",
-    "setup:devmoji": "zsh add-devmoji.sh"
+    "setup:devmoji": "zsh add-devmoji.sh",
+    "setup:prettier": "zsh add-prettier.sh",
+    "setup:typescript": "zsh add-typescript.sh"
   },
   "repository": {
     "type": "git",
