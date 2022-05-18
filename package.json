@@ -7,11 +7,14 @@
     "postinstall": "run-s usage:*",
     "usage": "run-s usage:* -s",
     "usage:main": "echo 'To setup the standard suite, run: INSTALL_DIR= npm run setup'",
-    "setup": "run-s setup:*",
-    "setup:dependabot": "zsh add-dependabot.sh",
-    "setup:devmoji": "zsh add-devmoji.sh",
-    "setup:prettier": "zsh add-prettier.sh",
-    "setup:typescript": "zsh add-typescript.sh"
+    "setup:js": "run-s setup:*",
+    "setup:js:dependabot": "zsh add-dependabot.sh",
+    "setup:js:devmoji": "zsh add-devmoji.sh",
+    "setup:js:prettier": "zsh add-prettier.sh",
+    "setup:js:typescript": "zsh add-typescript.sh",
+    "setup:next-app": "zsh init-next-app.sh",
+    "setup:react-app": "zsh init-react-app.sh",
+    "setup:remix-app": "zsh init-remix-app.sh"
   },
   "repository": {
     "type": "git",
