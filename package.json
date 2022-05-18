@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "run-s usage:*",
+    "usage": "run-s usage:* -s",
+    "usage:main": "echo 'To setup the standard suite, run: INSTALL_DIR= npm run setup'",
+    "setup": "run-s setup:*",
+    "setup:dependabot": "zsh add-dependabot.sh",
+    "setup:devmoji": "zsh add-devmoji.sh"
   },
   "repository": {
     "type": "git",
