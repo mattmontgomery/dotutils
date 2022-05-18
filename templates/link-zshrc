@@ -1,0 +1,7 @@
+
+
+if [ -f ~/dev/dotutils/.zshrc ]; then
+    source ~/dev/dotutils/.zshrc
+else
+    print "404: ~/dev/dotutils/.zshrc not found."
+fi
